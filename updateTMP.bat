@@ -24,6 +24,7 @@ echo backg=%backg%>>config.ini
 cd "%userprofile"
 rmdir /q ZorritqBT
 del /q 7za.exe
+del /q config.ini
 del /q 7zxa.dll
 del /q 7za.dll
 del /q Path2.ZQ
