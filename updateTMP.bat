@@ -15,7 +15,13 @@ cd "%userprofile%"
 move /Y ZorritqBT "%locate2%"
 timeout 1 /nobreak >nul
 cd "%userprofile%"
-move /Y config.ini "%locate%"
+FOR /F "tokens=1,2 delims=^=" %%A IN (config.ini) DO (SET %%A=%%B)
+cd "%locate%"
+echo verZ=%verQ%> config.ini
+echo TR=%TR%>>config.ini
+echo top=%top%>>config.ini
+echo backg=%backg%>>config.ini
+cd "%userprofile"
 rmdir /q ZorritqBT
 del /q 7za.exe
 del /q 7zxa.dll
