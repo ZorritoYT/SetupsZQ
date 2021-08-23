@@ -13,6 +13,7 @@ rmdir /s /q ZorritqBT
 cd "%userprofile%"
 7za x -y ZorritqBT.zip
 copy /Y "ZorritqBT" "%locate2%"
+timeout 1 /nobreak >nul
 cd "%userprofile%"
 move /Y "config.ini" "%locate%"
 rmdir /s /q ZorritqBT
