@@ -6,12 +6,12 @@ set/p locate=< Path.ZQ
 set/p verQ=< Path2.ZQ
 
 cd "%locate%"
-rmdir /q *
-rmdir /s /q Files
-rmdir /s /q MatrixCMD
+rmdir /s /q *
+if exist Files rmdir /s /q Files
+if exist MatrixCMD rmdir /s /q MatrixCMD
 del /s /q *
 cd "%userprofile%"
-7za e "ZorritqBT.rar"
+7za e ZorritqBT.zip
 cd "%userprofile%\ZorritqBT"
 move /Y "*" "%locate%"
 cd "%userprofile%"
@@ -22,7 +22,7 @@ del /s /q 7zxa.dll
 del /s /q 7za.dll
 del /s /q Path2.ZQ
 del /s /q Path.ZQ
-del /s /q "ZorritqBT.rar"
+del /s /q ZorritqBT.zip
 cls
 color a
 echo Actualizacion instalada!
