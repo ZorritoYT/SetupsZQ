@@ -24,6 +24,10 @@ del /s /q "ZorritqBT.rar"
 cls
 color a
 echo Actualizacion instalada!
+echo.
+echo Path : %locate%
+echo Update : %verQ%
+echo.
 echo abriendo ZorritqBT...
 timeout 2 /nobreak >nul
 cd "%locate%"
