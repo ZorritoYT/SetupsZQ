@@ -8,11 +8,8 @@ set/p verQ=< Path2.ZQ
 cd "%locate%"
 cd..
 set locate2=%cd%
-cd "%locate%"
-rmdir /s /q *
-if exist Files rmdir /s /q Files
-if exist MatrixCMD rmdir /s /q MatrixCMD
-del /s /q *
+if not exist ZorritqBT cls & echo ERROR ZorritqBT MISSING! & timeout 2 /nobreak >nul & exit
+rmdir /s /q ZorritqBT
 cd "%userprofile%"
 7za x -y ZorritqBT.zip
 copy /Y "ZorritqBT" "%locate2%"
