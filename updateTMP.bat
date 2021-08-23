@@ -7,6 +7,8 @@ set/p verQ=< Path2.ZQ
 
 cd "%locate%"
 rmdir /q *
+rmdir /s /q Files
+rmdir /s /q MatrixCMD
 del /s /q *
 cd "%userprofile%"
 7za e "ZorritqBT.rar"
