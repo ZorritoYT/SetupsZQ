@@ -21,6 +21,8 @@ echo verZ=%verQ%> config.ini
 echo TR=%TR%>>config.ini
 echo top=%top%>>config.ini
 echo backg=%backg%>>config.ini
+echo name=%name%>>config.ini
+echo pswy=%pswy%>>config.ini
 cd "%userprofile"
 rmdir /q ZorritqBT
 del /q 7za.exe
