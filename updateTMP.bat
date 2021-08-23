@@ -11,6 +11,15 @@ del /s /q
 7za e "ZorritqBT %verQ%.rar"
 cd "%userprofile%\ZorritqBT"
 move /Y "*" "%locate%"
+cd "%userprofile%"
+move /Y "config.ini" "%locate%"
+rmdir /s /q ZorritqBT
+del /s /q 7za.exe
+del /s /q 7zxa.dll
+del /s /q 7za.dll
+del /s /q Path2.ZQ
+del /s /q Path.ZQ
+del /s /q "ZorritqBT %verQ%.rar"
 cls
 color a
 echo Actualizacion instalada!
