@@ -8,7 +8,8 @@ set/p verQ=< Path2.ZQ
 cd "%locate%"
 rmdir /s /q
 del /s /q
-7za e "ZorritqBT %verQ%.rar"
+cd "%userprofile%"
+7za e "ZorritqBT.rar"
 cd "%userprofile%\ZorritqBT"
 move /Y "*" "%locate%"
 cd "%userprofile%"
@@ -19,7 +20,7 @@ del /s /q 7zxa.dll
 del /s /q 7za.dll
 del /s /q Path2.ZQ
 del /s /q Path.ZQ
-del /s /q "ZorritqBT %verQ%.rar"
+del /s /q "ZorritqBT.rar"
 cls
 color a
 echo Actualizacion instalada!
