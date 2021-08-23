@@ -12,17 +12,17 @@ if not exist ZorritqBT cls & echo ERROR ZorritqBT MISSING! & timeout 2 /nobreak 
 rmdir /s /q ZorritqBT
 cd "%userprofile%"
 7za x -y ZorritqBT.zip
-copy /Y "ZorritqBT" "%locate2%"
+move /Y ZorritqBT "%locate2%"
 timeout 1 /nobreak >nul
 cd "%userprofile%"
-move /Y "config.ini" "%locate%"
-rmdir /s /q ZorritqBT
-del /s /q 7za.exe
-del /s /q 7zxa.dll
-del /s /q 7za.dll
-del /s /q Path2.ZQ
-del /s /q Path.ZQ
-del /s /q ZorritqBT.zip
+move /Y config.ini "%locate%"
+rmdir /q ZorritqBT
+del /q 7za.exe
+del /q 7zxa.dll
+del /q 7za.dll
+del /q Path2.ZQ
+del /q Path.ZQ
+del /q ZorritqBT.zip
 cls
 color a
 echo Actualizacion instalada!
