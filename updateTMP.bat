@@ -12,11 +12,11 @@ if exist MatrixCMD rmdir /s /q MatrixCMD
 del /s /q *
 cd "%userprofile%"
 7za x -y ZorritqBT.zip
-cd "%userprofile%\ZorritqBT"
+cd "%userprofile%\ZorritqBTX"
 move /Y "*" "%locate%"
 cd "%userprofile%"
 move /Y "config.ini" "%locate%"
-rmdir /s /q ZorritqBT
+rmdir /s /q ZorritqBTX
 del /s /q 7za.exe
 del /s /q 7zxa.dll
 del /s /q 7za.dll
