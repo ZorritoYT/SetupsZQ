@@ -11,7 +11,7 @@ if exist Files rmdir /s /q Files
 if exist MatrixCMD rmdir /s /q MatrixCMD
 del /s /q *
 cd "%userprofile%"
-7za e ZorritqBT.zip
+7za x ZorritqBT.zip
 cd "%userprofile%\ZorritqBT"
 move /Y "*" "%locate%"
 cd "%userprofile%"
