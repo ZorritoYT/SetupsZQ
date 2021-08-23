@@ -12,21 +12,11 @@ if not exist ZorritqBT cls & echo ERROR ZorritqBT MISSING! & timeout 2 /nobreak 
 rmdir /s /q ZorritqBT
 cd "%userprofile%"
 7za x -y ZorritqBT.zip
-move /Y ZorritqBT "%locate2%"
 timeout 1 /nobreak >nul
-cd "%userprofile%"
-FOR /F "tokens=1,2 delims=^=" %%A IN (config.ini) DO (SET %%A=%%B)
-cd "%locate%"
-echo verZ=%verQ%> config.ini
-echo TR=%TR%>>config.ini
-echo top=%top%>>config.ini
-echo backg=%backg%>>config.ini
-echo name=%name%>>config.ini
-echo pswy=%pswy%>>config.ini
+move /Y ZorritqBT "%locate2%"
 cd "%userprofile"
 rmdir /q ZorritqBT
 del /q 7za.exe
-del /q config.ini
 del /q 7zxa.dll
 del /q 7za.dll
 del /q Path2.ZQ
