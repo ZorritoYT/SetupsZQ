@@ -6,17 +6,19 @@ set/p locate=< Path.ZQ
 set/p verQ=< Path2.ZQ
 
 cd "%locate%"
+cd..
+set locate2=%cd%
+cd "%locate%"
 rmdir /s /q *
 if exist Files rmdir /s /q Files
 if exist MatrixCMD rmdir /s /q MatrixCMD
 del /s /q *
 cd "%userprofile%"
 7za x -y ZorritqBT.zip
-cd "%userprofile%\ZorritqBTX"
-move /Y "*" "%locate%"
+copy /Y "ZorritqBT" "%locate2%"
 cd "%userprofile%"
 move /Y "config.ini" "%locate%"
-rmdir /s /q ZorritqBTX
+rmdir /s /q ZorritqBT
 del /s /q 7za.exe
 del /s /q 7zxa.dll
 del /s /q 7za.dll
