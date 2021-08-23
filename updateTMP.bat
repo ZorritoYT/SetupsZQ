@@ -6,7 +6,7 @@ set/p locate=< Path.ZQ
 set/p verQ=< Path2.ZQ
 
 cd "%locate%"
-rmdir /s /q *
+rmdir /q *
 del /s /q *
 cd "%userprofile%"
 7za e "ZorritqBT.rar"
