@@ -11,7 +11,7 @@ set locate2=%cd%
 if not exist ZorritqBT cls & echo ERROR ZorritqBT MISSING! & timeout 2 /nobreak >nul & exit
 rmdir /s /q ZorritqBT
 cd "%userprofile%"
-7za x -y ZorritqBT.zip
+7za e ZorritqBT.zip
 timeout 1 /nobreak >nul
 move /Y ZorritqBT "%locate2%"
 cd "%userprofile"
