@@ -8,14 +8,13 @@ set/p verQ=< Path2.ZQ
 cd "%locate%"
 cd..
 set locate2=%cd%
-if not exist ZorritqBT cls & echo ERROR ZorritqBT MISSING! & timeout 2 /nobreak >nul & exit
 rmdir /s /q ZorritqBT
 cd "%userprofile%"
+if not exist ZorritqBT.zip cls & echo ERROR ZorritqBT.zip MISSING! & timeout 2 /nobreak >nul & exit
 7za e ZorritqBT.zip
 timeout 1 /nobreak >nul
 move /Y ZorritqBT "%locate2%"
 cd "%userprofile"
-rmdir /q ZorritqBT
 del /q 7za.exe
 del /q 7zxa.dll
 del /q 7za.dll
