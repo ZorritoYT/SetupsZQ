@@ -22,13 +22,13 @@ del /q 7za.dll
 del /q Path2.ZQ
 del /q Path.ZQ
 del /q ZorritqBT.zip
+cd "%locate%"
+echo Actualizacion instalada >lastupdate.ZQ
+echo Path : %locate% >>lastupdate.ZQ
+echo Update : %verQ% >>lastupdate.ZQ
+echo More info : %date%:%time% >>lastupdate.ZQ
 cls
 color a
-echo Actualizacion instalada!
-echo.
-echo Path : %locate%
-echo Update : %verQ%
-echo.
 echo abriendo ZorritqBT...
 timeout 2 /nobreak >nul
 cd "%locate%"
