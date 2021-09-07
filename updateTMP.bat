@@ -25,7 +25,7 @@ cd "%locate%"
 echo Actualizacion instalada >lastupdate.ZQ
 echo Path : %locate% >>lastupdate.ZQ
 echo Updated to : %verQ% >>lastupdate.ZQ
-echo More info : %date%:%time% >>lastupdate.ZQ
+echo Updated date : %date% >>lastupdate.ZQ
 cls
 color a
 echo abriendo ZorritqBT...
