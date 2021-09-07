@@ -25,7 +25,7 @@ del /q ZorritqBT.zip
 cd "%locate%"
 echo Actualizacion instalada >lastupdate.ZQ
 echo Path : %locate% >>lastupdate.ZQ
-echo Update : %verQ% >>lastupdate.ZQ
+echo Updated to : %verQ% >>lastupdate.ZQ
 echo More info : %date%:%time% >>lastupdate.ZQ
 cls
 color a
