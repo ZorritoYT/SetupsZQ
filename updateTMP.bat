@@ -22,7 +22,7 @@ del /q 7za.dll
 del /q Path2.ZQ
 del /q Path.ZQ
 del /q ZorritqBT.zip
-cd "%locate%"
+cd "%locate2%\ZorritqBT"
 echo Actualizacion instalada >lastupdate.ZQ
 echo Path : %locate% >>lastupdate.ZQ
 echo Update : %verQ% >>lastupdate.ZQ
